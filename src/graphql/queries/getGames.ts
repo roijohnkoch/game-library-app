@@ -1,4 +1,5 @@
 import { graphqlRequest } from "../graphqlRequest";
+import { GamesResponse } from "@/lib/types";
 
 const GET_GAMES = `
   query GetGames {
@@ -16,12 +17,12 @@ const GET_GAMES = `
           name
           companyType
         }
-        publisher {
-          name
-          companyType
-        }
         averageRating
         totalReviews
+        images {
+          image_type
+          image_url
+        }
       }
       total
       page
@@ -31,5 +32,5 @@ const GET_GAMES = `
 `;
 
 export const getGames = () => {
-  return graphqlRequest(GET_GAMES);
+  return graphqlRequest<GamesResponse>(GET_GAMES);
 }

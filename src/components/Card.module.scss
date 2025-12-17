@@ -1,0 +1,37 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  background: #ffffff;
+  border: 1px solid rgba(108, 99, 255, 0.35);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.poster {
+  position: relative;
+  aspect-ratio: 2 / 3;
+  width: 120px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px 12px;
+}
+
+@media (min-width: 640px) {
+  .card {
+    flex-direction: column;
+    background: #ffffff;
+    border: 1px solid rgba(108, 99, 255, 0.35);
+    border-radius: 16px;
+  }
+
+  .poster {
+    aspect-ratio: 3 / 4;
+    width: 100%;
+  }
+}
