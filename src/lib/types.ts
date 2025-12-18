@@ -45,3 +45,7 @@ export interface PosterImage {
   image_type: string;
   image_url: string;
 }
+
+export interface GameDetailsByIdResponse {
+  game: GameDetails;
+}
