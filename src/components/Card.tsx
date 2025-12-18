@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { CardProps } from "@/lib/types";
 import styles from "./Card.module.scss";
 
@@ -27,7 +28,15 @@ const Card: React.FC<CardProps> = (props) => {
       itemScope
       itemType="http://schema.org/VideoGame"
     >
-      <div className={styles.poster}></div>
+      <div className={styles.poster}>
+        <Image 
+          src={`https://picsum.photos/seed/${encodeURIComponent(title + releaseDate)}/600/900`}
+          alt={`${title} Cover Image`}
+          fill
+          itemProp="image"
+          priority={false}
+        />
+      </div>
       <div className={styles.content}>
         <h3>{title}</h3>
         <span>Release Date: <time dateTime={releaseDate} itemProp="releaseDate">{formatUnixDate(releaseDate)}</time></span>
