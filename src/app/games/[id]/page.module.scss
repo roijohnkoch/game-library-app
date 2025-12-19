@@ -79,6 +79,52 @@
   font-weight: 600;
 }
 
+.errorBox {
+  background: #f5f5f5;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.errorMessage {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.primaryButton {
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.primaryButton:hover {
+  opacity: 0.9;
+}
+
+.secondaryButton {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  background: #fff;
+}
+
+.secondaryButton:hover {
+  background: #eee;
+}
+
 @media (min-width: 640px) {
   .details {
     display: grid;
