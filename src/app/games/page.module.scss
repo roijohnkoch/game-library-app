@@ -9,7 +9,8 @@
   padding: 24px;
 }
 
-.errorContainer {
+/* Error and Loading Styles */
+.errorContainer .loadingContainer {
   max-width: 1100px;
   margin: 0 auto;
   padding: 24px;
@@ -57,4 +58,60 @@
 
 .primaryButton:hover {
   opacity: 0.9;
+}
+
+.titleSkeleton {
+  height: 32px;
+  width: 280px;
+  border-radius: 6px;
+  background: #e5e5e5;
+  margin-bottom: 8px;
+}
+
+.descriptionSkeleton {
+  height: 16px;
+  width: 420px;
+  border-radius: 6px;
+  background: #e5e5e5;
+}
+
+.posterSkeleton {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  background: #e5e5e5;
+  margin-bottom: 16px;
+}
+
+.loadingDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.loadingDetailItem {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.detailSkeleton {
+  height: 14px;
+  width: 120px;
+  border-radius: 4px;
+  background: #e5e5e5;
+}
+
+.detailSkeletonSmall {
+  height: 12px;
+  width: 80px;
+  border-radius: 4px;
+  background: #e5e5e5;
+}
+
+@media (min-width: 640px) {
+  .details {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
