@@ -32,6 +32,7 @@ const Card: React.FC<CardProps> = (props) => {
       <Link
         href={`/games/${gameDetails.id}`}
         prefetch={false}
+        className={styles.link}
       >
         <div className={styles.poster}>
           <Image 

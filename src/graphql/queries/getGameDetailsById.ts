@@ -7,8 +7,14 @@ const GET_GAME_DETAILS_BY_ID = `
       id
       title
       description
-      platform
       releaseDate
+      averageRating
+      developer {
+        name
+      }
+      genre {
+        genreName
+      }
       reviews {
         ratingScore
         reviewText
@@ -16,7 +22,6 @@ const GET_GAME_DETAILS_BY_ID = `
           username
         }
       }
-      averageRating
       totalReviews
     }
   }

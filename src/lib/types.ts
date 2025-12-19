@@ -18,11 +18,11 @@ export interface GameDetails {
   platform: string;
   releaseDate: string;
   genre: Genre;
-  developer: Developer;
   averageRating: number;
   totalReviews: number;
   images: PosterImage[];
-  reviews?: Review[];
+  developer: Developer;
+  reviews: Review[];
 }
 
 export interface Developer {

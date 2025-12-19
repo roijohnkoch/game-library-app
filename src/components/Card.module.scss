@@ -7,6 +7,11 @@
   overflow: hidden;
 }
 
+.link {
+  display: flex;
+  flex-direction: row;
+}
+
 .poster {
   position: relative;
   aspect-ratio: 2 / 3;
@@ -28,6 +33,10 @@
     background: #ffffff;
     border: 1px solid rgba(108, 99, 255, 0.35);
     border-radius: 16px;
+  }
+
+  .link {
+    flex-direction: column;
   }
 
   .poster {
