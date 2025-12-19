@@ -28,3 +28,29 @@
   overflow: hidden;
   margin-bottom: 8px;
 }
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.detailItem {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+
+@media (min-width: 640px) {
+  .details {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .detailItem {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
