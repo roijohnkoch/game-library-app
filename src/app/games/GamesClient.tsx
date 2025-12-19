@@ -11,7 +11,7 @@ interface GamesClientProps {
 }
 
 const GamesClient: React.FC<GamesClientProps> = ({ games }) => {
-  const [sortBy, setSortBy] = useState<SortOption>("rating-desc");
+  const [sortBy, setSortBy] = useState<SortOption>("release-desc");
 
   const unixToMilliseconds = (unix: string | number): number => {
     return Number(unix) < 1e12 ? Number(unix) * 1000 : Number(unix);

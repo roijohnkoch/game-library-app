@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import {  getGameDetailsById } from '@/graphql/queries/getGameDetailsById';
+import BackButton from '@/components/BackButton';
 import styles from './page.module.scss';
 
 interface GameDetailsPageParams {
@@ -32,6 +33,9 @@ const GameDetailsPage: React.FC<GameDetailsPageParams> = async ({ params }) => {
 
   return (
     <section className={styles.gameDetailsContainer}>
+      <nav>
+        <BackButton />
+      </nav>
       <header className={styles.header}>
         <h1 className={styles.title}>{title}</h1>
         <p className={styles.description}>{description}</p>
