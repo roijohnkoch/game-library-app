@@ -50,3 +50,14 @@ export interface PosterImage {
 export interface GameDetailsByIdResponse {
   game: GameDetails;
 }
+
+export type SortOption =
+  | "release-desc"
+  | "release-asc"
+  | "rating-desc"
+  | "rating-asc";
+
+export interface SortBarProps {
+  value: SortOption;
+  onChange: (value: SortOption) => void;
+}

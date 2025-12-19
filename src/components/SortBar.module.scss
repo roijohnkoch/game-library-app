@@ -1,0 +1,20 @@
+.sortBar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 24px;
+}
+
+.label {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.select {
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+}

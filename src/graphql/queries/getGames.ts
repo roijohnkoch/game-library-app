@@ -3,7 +3,7 @@ import { GamesResponse } from "@/lib/types";
 
 const GET_GAMES = `
   query GetGames {
-    games(limit: 5) {
+    games {
       games {
         id
         title

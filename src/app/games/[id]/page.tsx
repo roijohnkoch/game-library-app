@@ -59,7 +59,7 @@ const GameDetailsPage: React.FC<GameDetailsPageParams> = async ({ params }) => {
         </div>
         <div className={styles.detailItem}>
           <span className={styles.detailLabel}>Rating: </span>
-          <span>{averageRating}</span>
+          <span>{averageRating}&#11088;</span>
         </div>
       </section>
       <section className={styles.reviews}>
@@ -69,7 +69,7 @@ const GameDetailsPage: React.FC<GameDetailsPageParams> = async ({ params }) => {
             <article key={review.id} className={styles.reviewItem}>
               <span className={styles.username}>{review.user.username}</span>
               <p className={styles.reviewText}>{review.reviewText}</p>
-              <span className={styles.ratingScore}>{review.ratingScore}</span>
+              <span className={styles.ratingScore}>{review.ratingScore}&#11088;</span>
             </article>
           )) : <p className={styles.noReviews}>No reviews available.</p>}
         </div>

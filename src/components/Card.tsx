@@ -48,7 +48,7 @@ const Card: React.FC<CardProps> = (props) => {
           <h3>{title}</h3>
           <span>Release Date: <time dateTime={releaseDate} itemProp="releaseDate">{formatUnixDate(releaseDate)}</time></span>
           <span>Genre: {genre.genreName}</span>
-          <span>Average Rating: {averageRating}</span>
+          <span>Average Rating: {averageRating}&#11088;</span>
         </div>
       </Link>
     </article>

@@ -1,5 +1,5 @@
 import { getGames } from "@/graphql/queries/getGames";
-import { Card } from "@/components";
+import GamesClient from "./GamesClient";
 import styles from "./page.module.scss";
 
 const GamesPage = async () => {
@@ -9,11 +9,7 @@ const GamesPage = async () => {
   return (
     <section aria-labelledby="games-list-heading">
       <h2 id="games-list-heading" className={styles.header}>Games List</h2>
-      <div className={styles["games-grid"]}>
-        {gameList.map((game) => (
-          <Card key={game.id} gameDetails={game} />
-        ))}
-      </div>
+      <GamesClient games={gameList} />
     </section>
   );
 };
