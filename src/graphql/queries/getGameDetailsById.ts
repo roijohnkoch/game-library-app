@@ -16,6 +16,7 @@ const GET_GAME_DETAILS_BY_ID = `
         genreName
       }
       reviews {
+        id
         ratingScore
         reviewText
         user {

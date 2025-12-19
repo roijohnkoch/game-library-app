@@ -12,8 +12,8 @@ const GameDetailsPage: React.FC<GameDetailsPageParams> = async ({ params }) => {
   const { id } = await params;
   const gameDetails = await getGameDetailsById(id);
   const { game } = gameDetails;
-  const { title, description, releaseDate, developer, averageRating, genre } = game;
-
+  const { title, description, releaseDate, developer, averageRating, genre, reviews } = game;
+  
   const formatUnixDate = (unix: string | number): string => {
     const timestamp = Number(unix)
     if (!timestamp) return 'Unknown'
@@ -62,6 +62,19 @@ const GameDetailsPage: React.FC<GameDetailsPageParams> = async ({ params }) => {
           <span>{averageRating}</span>
         </div>
       </section>
+      <section className={styles.reviews}>
+        <h2 className={styles.reviewsTitle}>Reviews</h2>
+        <div className={styles.reviewItemsContainer}>
+          {reviews.length > 0 ? reviews.map((review) => (
+            <article key={review.id} className={styles.reviewItem}>
+              <span className={styles.username}>{review.user.username}</span>
+              <p className={styles.reviewText}>{review.reviewText}</p>
+              <span className={styles.ratingScore}>{review.ratingScore}</span>
+            </article>
+          )) : <p className={styles.noReviews}>No reviews available.</p>}
+        </div>
+      </section>
+
     </section>
   );
 }

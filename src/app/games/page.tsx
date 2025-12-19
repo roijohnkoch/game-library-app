@@ -8,7 +8,7 @@ const GamesPage = async () => {
   const { games: gameList } = games;
   return (
     <section aria-labelledby="games-list-heading">
-      <h2 id="games-list-heading">Games List</h2>
+      <h2 id="games-list-heading" className={styles.header}>Games List</h2>
       <div className={styles["games-grid"]}>
         {gameList.map((game) => (
           <Card key={game.id} gameDetails={game} />

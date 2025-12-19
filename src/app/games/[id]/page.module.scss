@@ -42,6 +42,42 @@
   gap: 8px;
 }
 
+.reviews {
+  margin-top: 16px;
+}
+
+.reviewsTitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.reviewItemsContainer {
+  max-height: 280px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.reviewItem {
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.username {
+  font-weight: 600;
+}
+
+.reviewText {
+  font-size: 0.95rem;
+  margin: 8px 0;
+}
+
+.ratingScore {
+  font-weight: 600;
+}
 
 @media (min-width: 640px) {
   .details {
@@ -52,5 +88,10 @@
   .detailItem {
     flex-direction: column;
     gap: 4px;
+  }
+
+  .reviewItemsContainer {
+    max-height: 360px;
+    overflow-y: auto;
   }
 }

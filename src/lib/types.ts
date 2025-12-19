@@ -34,6 +34,7 @@ export interface Genre {
 }
 
 export interface Review {
+  id: string
   ratingScore: number;
   reviewText: string;
   user: {
