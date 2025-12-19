@@ -5,7 +5,7 @@ The Games Library Application is a simple web application that allows user to br
 ## Getting Started
 
 ### Pre-requisites
-Before running the application, ensure you have the follow the steps in running the Games API:
+Before running the application, ensure you have followed the steps in running the Games API:
 
 - [Games API](https://github.com/merkle-ne-tools/games-api-roijohnkoch)
 
@@ -17,6 +17,6 @@ npm install
 
 # Start the application locally
 npm run dev
+```
 
-# Open the application in your browser
-# Typically accessible at http://localhost:3000
+Run the application in your local browser: `http://localhost:3000/`
